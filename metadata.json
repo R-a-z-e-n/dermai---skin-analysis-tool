@@ -1,0 +1,7 @@
+{
+  "name": "DermAI - Skin Analysis Tool",
+  "description": "AI-powered skin analysis and personalized product recommendations using Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
