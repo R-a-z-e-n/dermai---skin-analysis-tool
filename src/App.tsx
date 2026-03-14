@@ -98,7 +98,7 @@ const ANALYSIS_STEPS = [
   "Querying product database",
   "Personalizing your recommendations"
 ];
-const GEN_AI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
+const GEN_AI = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || 'MISSING_API_KEY' });
 
 export default function App() {
   const [view, setView] = useState<'home' | 'analysis' | 'results' | 'admin' | 'history'>('home');
